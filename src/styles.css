@@ -1,0 +1,73 @@
+/* Import Nunito Sans font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+/* Base styles for the component library */
+:root {
+  --font-family: "Nunito Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Colors */
+  --color-primary: #3b82f6;
+  --color-primary-hover: #2563eb;
+  --color-error: #ef4444;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+
+  /* Text colors */
+  --color-text-primary: #111827;
+  --color-text-secondary: #6b7280;
+  --color-text-muted: #9ca3af;
+
+  /* Border colors */
+  --color-border: #d1d5db;
+  --color-border-focus: #3b82f6;
+  --color-border-error: #ef4444;
+
+  /* Background colors */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f9fafb;
+  --color-bg-disabled: #f3f4f6;
+}
+
+/* Apply font family to all elements */
+* {
+  font-family: var(--font-family);
+}
+
+p {
+  margin-block: 0.25rem;
+}
+
+/* Storybook specific overrides */
+.sb-show-main {
+  font-family: var(--font-family) !important;
+}
+
+/* Component-specific styles */
+.checkbox-component {
+  font-family: var(--font-family);
+}
+
+.form-field-component {
+  font-family: var(--font-family);
+}
+
+/* Utility classes for font weights */
+.font-normal {
+  font-weight: var(--font-weight-normal);
+}
+
+.font-medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.font-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+.font-bold {
+  font-weight: var(--font-weight-bold);
+}
