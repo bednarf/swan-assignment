@@ -9,7 +9,7 @@ export interface CheckBoxProps
 }
 
 export const CheckBox = forwardRef<HTMLInputElement, CheckBoxProps>(
-  ({ label, id, disabled, ...props }, ref) => {
+  ({ label, disabled, ...props }, ref) => {
     return (
       <div className={styles.container}>
         <label className={cn(styles.label, disabled && styles.disabled)}>

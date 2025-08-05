@@ -16,8 +16,6 @@ export interface FormFieldProps extends React.HTMLAttributes<HTMLDivElement> {
   required?: boolean;
   /** Whether the field is disabled */
   disabled?: boolean;
-  /** Custom class name for the label */
-  labelClassName?: string;
   /** Custom class name for the description */
   descriptionClassName?: string;
   /** The form element to wrap */
@@ -31,7 +29,6 @@ export const FormField = forwardRef<HTMLDivElement, FormFieldProps>(
       required,
       disabled = false,
       className,
-      labelClassName,
       descriptionClassName,
       children,
       id,
