@@ -54,7 +54,7 @@ export const FormField = forwardRef<HTMLDivElement, FormFieldProps>(
           }
           return child;
         }),
-      [],
+      [children],
     );
 
     return (
